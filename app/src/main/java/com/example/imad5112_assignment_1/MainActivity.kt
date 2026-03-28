@@ -31,3 +31,13 @@ class MainActivity : AppCompatActivity() {
                 "Night" -> "Leave a thoughtful comment on a friend's post."
                 else -> "Invalid input. Please enter: Morning, Mid-Morning, Afternoon, Afternoon Snack Time, Dinner or Night"
             }
+
+            resultTextView.text = message
+        }
+
+        resetButton.setOnClickListener {
+            timeEditText.text.clear()
+            resultTextView.text = "Your social spark will appear here"
+        }
+    }
+}
