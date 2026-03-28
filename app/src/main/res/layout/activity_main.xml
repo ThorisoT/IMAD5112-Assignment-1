@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     android:orientation="vertical"
     android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/screenshot_2026_03_28_121714" />
 
     <EditText
         android:id="@+id/timeEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Please enter time of day"/>
+        android:layout_height="72dp"
+        android:hint="Please enter time of day" />
 
     <Button
         android:id="@+id/sumbitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="submit"/>
+        android:backgroundTint="#000000"
+        android:text="submit" />
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your message will appear here."/>
+        android:layout_height="334dp"
+        android:text="Your message will appear here." />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reset" />
+        android:backgroundTint="#FF0000"
+        android:text="Reset"
+        app:rippleColor="#F0F0F0" />
 
 </LinearLayout>
 
